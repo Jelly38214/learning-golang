@@ -55,3 +55,11 @@ Go没有实现接口的关键字.当Go中的接口具有接口所需的所有方
 Go有两种类型的包: 
  - Executable(main package is used to make an executable type package.): Generates a file that we can run
  - Reusable: code used as 'helpers'. Good place to put reusable logic
+
+
+[Go的随机数](https://juejin.cn/post/6844903959065264141):
+  在Go中获取的随机数,是基于某一个种子(seed)来的.也就是说,如果seed相同,那么获取的随机数就会相同. 解决这个现象的方法有两种:
+    - 整个程序全局只初始化调用一次seed
+    - 每次使用纳秒级别的种子
+
+  其中第二种官方不推荐,因为在高并发下,及时是纳秒级 ,也可能获得相同的纳秒

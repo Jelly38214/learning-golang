@@ -14,6 +14,10 @@ A是Ace
 黑桃Q: the queen of spades
 梅花K: the king of clubs
 
+deal: 发牌
+second deal: 发第二张
+bottom deal: 发底牌
+center deal: 发中间牌
 
 
 receiver function === method of particular type === specific class's method
